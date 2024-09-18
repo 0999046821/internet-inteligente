@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jura:wght@300..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sankofa+Display&display=swap');
+
+*{
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+
+/*SECTION BANNER*/
+.navbar {
+    background-color: #ff6600;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+#particle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.banner {
+    margin-top: auto;
+    height: 84vh;
+    background-image: url(/IMG/fibra.jpg);
+    background-size: 1000px 550px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 50px 50px;
+
+}
+
+.banner h1 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    text-shadow: #e2d8d8 1px 1px 1px;
+    color: #f8f8f7;
+    justify-content: center;
+    line-height: 180%;
+    margin-top: 0;
+    font-size:60px;
+    font-style:unset;
+    text-shadow: 3px  0px 0px rgb(18, 18, 18),
+    0px  4.5px 0px rgb(11, 11, 11),
+    0px -1px 0px rgb(10, 5, 1),
+   -1.5px  0px 0px rgb(197, 90, 13);
+        
+}
+
+.banner h2 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    text-shadow: #e2d8d8 1px 1px 1px;
+    color: #f8f8f7;
+    justify-content: center;
+    line-height: 300%;
+    margin-top: 20%;
+    font-size:60px;
+    font-style:unset;
+    text-shadow: 3px  0px 0px rgb(18, 18, 18),
+    0px  4.5px 0px rgb(11, 11, 11),
+    0px -1px 0px rgb(10, 5, 1),
+   -1.5px  0px 0px rgb(197, 90, 13);
+
+}
+
+
+/*SECTIO PRE-GALERY*/
+.pre-galery{
+    display: flex;
+    height: 50vh;
+    background-color: #ff6600;
+}
+.pre-galery h1{
+    font-size: 50px;
+    color: #eceaea;
+    align-content: center;
+    text-align: center;
+    font-weight: 400 ;
+    text-shadow: #0a0909 2px 2px 2px;
+    margin-left: 10px;
+}
+
+.pre-galery .caja.madre{
+    display: flexbox;
+    width: 90%;
+    padding: 1px;
+    box-shadow: #000 1px 1px 1px;
+    
+}
+
+.sub-cajas{
+    display: flex;
+    align-items: flex-start;
+    float: inline-start;
+    padding-left:99px ;
+    margin-top: 15%;
+
+}
+
+.sub-cajas p{
+    display: block;
+    width: 15%;
+    position:absolute;
+    align-content:flex-start;
+    margin-top: 10%;
+    font-weight: 900;
+    text-shadow: black 1px 1px 1px;
+    
+}
+
+/*SECTION GALERY*/
+.title-galery {
+    width: 100%;
+    font-size: 50px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-shadow: #e65c00 2px 2px 2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 55px;
+    margin-top:0;
+    gap: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+}
+.card .leyend-into{
+    font-size: 20px;
+    color: #f1ebe7;
+    text-shadow:#e65c00 0.5px 0.5px 0.5px;
+    text-align: center;
+    font-weight: 700;
+}
+.card-inner {
+    border: solid #e65c00 2px;
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px ;
+}
+
+.card-front {
+    background-color: #333;
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.card-front p{
+    text-align: center;   
+    text-shadow: #e65c00 0,5px 0.5px 0.5px;
+    font-weight: 400;
+}
+.card-back {
+    background-color: #ff6600;
+    color: #000;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding: 1px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card-back ol{
+    color:#f9f8f8;
+    text-align: left; 
+    padding-left: 0%;
+    margin-left: 0%;
+    font-weight: 700;
+    text-shadow: #010101 0.5px 0.5px 0.5px;
+}
+.card-back button{
+    border:none;
+    border-radius: 5px;
+    background-color: #f9f2f2;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    color: #020202;
+}
+
+.card-back button:hover {
+    background-color: #020202;
+   
+}
+.card-back a{
+    text-decoration: none;
+}
+.card-back .wp{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+.card-back .wp:hover {
+    color: #fefcfc;
+}
+
+
+/*SECTIONS CONTACTS*/
+
+.contact-form {
+    padding: 20px;
+    text-align: center;
+    background-position:center;
+    background-color: #e65c00;
+    background-size: 1100px 600px;
+    background-repeat: no-repeat;
+}
+
+.contact-form form {
+    display: inline-block;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color:#f6f6f9;
+    font-weight: 400;
+    size: 10px;
+    
+    
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: #faf7f7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #eae0e0;
+}
+
+.contact-form button {
+    background-color: #f7f5f3;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #170a02;
+    color: aliceblue;
+}
+
+/*FOOTER*/
+.footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 1px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 384px) {
+    /*section nav*/ 
+    .navbar{
+        padding: 5px 10px;
+        width: auto;
+    }
+    .nav-link{
+        font-size: 1.5rem;
+    }
+    /*section banner*/
+    .banner{
+        background-size: 500px 300px;
+    
+    }
+
+    .banner h1{
+        font-size: 40px;
+    }
+    .banner h2{
+        font-size: 50px;
+        margin-top: 140%;
+    }    
+    /*SECTIO PRE-GALERY*/
+
+    .pre-galery{
+        display: inline-block;
+        height: auto;
+    }
+    .sub-cajas{
+        margin-top: auto;
+        margin-right: 40%;
+    }
+    .sub-cajas p{
+        margin-left:40% ;
+    }
+    /*SECTION GALERY*/
+    .card{
+        width: 180px;
+        height: 200px;
+        padding-top: 20%;
+    }
+    .card .leyend-into{
+        margin-left: 100%;
+        
+    }
+    .card-back ol{
+        font-size: 12px;
+    
+    }
+}
